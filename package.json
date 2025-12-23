@@ -1,0 +1,14 @@
+{
+  "name": "dev.kabreneman.us",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Kabreneman",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": ["portfolio", "personal-website"],
+  "author": "Kabreneman",
+  "license": "MIT"
+}
