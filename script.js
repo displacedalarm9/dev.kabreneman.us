@@ -17,6 +17,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
-    console.log('Website initialized successfully!');
 });
