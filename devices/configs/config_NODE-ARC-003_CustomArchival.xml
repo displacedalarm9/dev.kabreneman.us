@@ -1,0 +1,52 @@
+<!-- UNISYS_IMPORT_RECORD
+AUID: MIG-00031
+TSN: TSN-20260403-MIGRATE
+Class: CONFIG
+Lifecycle: Active
+Title: NODE-ARC-003 Custom Archival Node Configuration
+CreatedBy: Kyle Breneman
+OriginalRepo: displacedalarm9/kabreneman.us
+OriginalPath: configs/config_NODE-ARC-003_CustomArchival.xml
+OriginalLocation: github:displacedalarm9/kabreneman.us/configs/config_NODE-ARC-003_CustomArchival.xml
+MigratedOn: 2026-04-03
+-->
+<Configuration>
+  <System>
+    <ProductName>Custom Archival Node</ProductName>
+    <MachineTypeModel>NAS-ARCH-001</MachineTypeModel>
+    <SKU>CustomBuild</SKU>
+    <NodeRole>ArchivalStorage</NodeRole>
+    <CSN>ID-NODE-ARC-003</CSN>
+  </System>
+  <Hardware>
+    <CPU>Intel Core i5-13500T</CPU>
+    <GPU>None (Integrated)</GPU>
+    <RAM>16GB DDR4 ECC</RAM>
+    <Storage>4TB RAID5 NAS + 1TB SSD (OS)</Storage>
+    <Display>Headless / Remote Access</Display>
+    <Battery>N/A</Battery>
+    <Keyboard>N/A</Keyboard>
+  </Hardware>
+  <Software>
+    <OS>TrueNAS SCALE</OS>
+    <OneDrive>Not Applicable</OneDrive>
+    <OfficeSuite>Not Applicable</OfficeSuite>
+    <SecuritySuite>Firewall + Snapshot Scheduler</SecuritySuite>
+  </Software>
+  <ProfileOverlay>
+    <Wallpaper>archive-grey-motif.png</Wallpaper>
+    <AccentColor>#228B22</AccentColor>
+    <Hostname>NODE-ARC-003</Hostname>
+    <LoginTheme>StorageReady</LoginTheme>
+  </ProfileOverlay>
+  <Networking>
+    <WiFi>Optional</WiFi>
+    <Bluetooth>None</Bluetooth>
+    <Ethernet>Gigabit (Dual NIC)</Ethernet>
+  </Networking>
+  <Tags>
+    <Environment>GamingCodingPad</Environment>
+    <DeploymentPhase>Phase1</DeploymentPhase>
+    <RestorationGrade>True</RestorationGrade>
+  </Tags>
+</Configuration>
