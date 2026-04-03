@@ -1,5 +1,88 @@
 # UNISYS — GitHub Copilot Instructions
 
+## Section 1: System Context
+
+You're operating inside a governed system with its own architecture. When generating or editing code in this repo, treat these as hard constraints.
+
+- **UNISYS** = overarching governed system.
+- **DOCSYS** = document subsystem (Pages, PMFs, identity, lifecycle).
+- **AUTOENV** = environment/daemon layer (pawn/front‑line executables).
+- **DOCSYS SynchronizationKit** = syncs DOCSYS artifacts and metadata with GitHub.
+
+Code in this repo is assumed to be part of one of those layers — never "free‑floating."
+
+---
+
+## Section 2: Identity and Metadata
+
+- Every governed artifact must support:
+  - **TSN** (event identity)
+  - **AUID** (artifact identity)
+  - **UDIS** (instance identity, if applicable)
+- Identity is immutable and must not be silently changed or reused.
+- SyncKit and any tools must preserve identity and PMF metadata.
+
+When in doubt, do not invent IDs — expect them to be passed in or read from metadata.
+
+---
+
+## Section 3: AE‑RPG (AUTOENV Report Generator)
+
+AE‑RPG is a cross‑system daemon/utility that:
+- reads synced data (validations, reviews, reports, other datasets)
+- accepts standardized prompts/parameters
+- analyzes/aggregates data to find patterns (e.g., "which month overspent?")
+- outputs fixed‑format reports with:
+  - static layout
+  - dynamic header/footer applied at instantiation time only
+
+AE‑RPG is **not** a Report, Form, Procedure, or Workflow. It is a programmatic component that produces R‑Class reports.
+
+When generating code for AE‑RPG:
+- Expect structured inputs (files, JSON, DB, etc.) and structured outputs (report files).
+- Keep formatting deterministic and template‑driven.
+- Do not bake identity or lifecycle logic into AE‑RPG — those come from DOCSYS/PMF.
+
+---
+
+## Section 4: DOCSYS SynchronizationKit
+
+Responsible for syncing:
+- Pages
+- PMFs
+- related artifacts
+
+between local DOCSYS and GitHub.
+
+Must:
+- preserve identity fields
+- preserve lifecycle state
+- avoid collisions
+- log or surface conflicts rather than silently overwriting
+
+When generating code around SyncKit:
+- Prefer explicit, auditable operations (clear logs, clear error states).
+- Never "auto‑fix" identity or metadata — only detect and report.
+
+---
+
+## Section 5: General Behavior Expectations
+
+- **Determinism**: same inputs → same outputs.
+- **Auditability**: logs and outputs should make decisions traceable.
+- **No hidden magic**: avoid implicit behavior that changes identity, lifecycle, or governance state.
+- **Separation of concerns**:
+  - DOCSYS = documents, metadata, lifecycle
+  - AUTOENV/AE‑RPG = computation and consolidation
+  - SyncKit = transport/sync
+
+If a task is ambiguous, prefer:
+1. Preserving identity and metadata.
+2. Producing explicit, inspectable outputs.
+3. Failing loudly rather than guessing.
+
+---
+
 ## Section 6: GitHub Copilot Workflow & Principles
 
 ---
