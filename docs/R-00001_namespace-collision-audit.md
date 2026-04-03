@@ -121,9 +121,14 @@ Finding COL-002 — MISSING AUID ASSIGNMENTS (HIGH)
 
     Artifact                           DOC ID      Proposed AUID     Proposed TSN
     ─────────────────────────────────  ──────────  ───────────────   ─────────────────────────
-    UNISYS metadata standard.md        X-00002_    AUID-X-00001      TSN-20260403-RETROX002
-    DOCSYS document creation govern.   G-00002     AUID-G-00001      TSN-20260403-RETROG002
+    UNISYS metadata standard.md        X-00002_    AUID-X-00002      TSN-20260403-RETROX002
+    DOCSYS document creation govern.   G-00002     AUID-G-00002      TSN-20260403-RETROG002
     M-00001.md                         M-00001     AUID-M-00001      TSN-20260403-RETROM001
+
+    Rationale for suffix alignment: within the class-scoped AUID convention (AUID-X-######),
+    the numeric suffix is aligned to the DOC ID suffix (X-00002_ → AUID-X-00002) to make
+    the relationship self-evident during cross-referencing. AUID-X-00001 is reserved for
+    X-00001_ (Identity Constitution) if that ghost artifact is eventually created.
 
     Note: If G-00002 is merged with P-00000 (see COL-001), only one AUID is needed.
     Note: TSN prefix TSN-20260403-RETRO* marks retroactive assignments.
@@ -251,7 +256,7 @@ Section 9 — Recommended Actions by Priority
       OR formally declare a dual registration with CROSS-REGISTER annotation.
 
     ACTION-002: Begin retroactive AUID assignments (COL-002).
-      Assign AUID-X-00001, AUID-G-00001, AUID-M-00001 to the three foundational artifacts.
+      Assign AUID-X-00002, AUID-G-00002, AUID-M-00001 to the three foundational artifacts.
       Assign matching TSNs (TSN-20260403-RETRO*).
       Update each file's header block.
 
