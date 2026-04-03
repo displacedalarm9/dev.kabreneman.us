@@ -74,6 +74,15 @@ A registry of all reserved but uninstantiated identity-bearing documents across 
 
 ---
 
+## B-Series — Briefs
+
+- B-00002_ — Copilot Interaction Brief
+- B-00003_ — Migration Workflow Brief
+- B-00004_ — TSN Assignment Brief
+- B-00005_ — PMF Construction Brief
+
+---
+
 ## P-Series — Protocols
 
 - P-00001_ — Protocol Framework
