@@ -122,8 +122,9 @@ If any sensitive content is detected:
   data/                 (raw data directories)
   logs/                 (log output)
   reviews/              (filled review documents, if stored locally)
-  ~/secure-*            (secure directories — note: ~ paths not processed by git,
-                         list explicit relative paths if needed)
+  # Note: The secure backup directory lives outside the repository root and therefore
+  # does not require a .gitignore entry. .gitignore only affects files within the
+  # repository working tree. Keep ~/secure-kabreneman-backup/ outside the repo root.
 
 Section 6 — Backup Procedures
 
@@ -193,9 +194,9 @@ To restore all files from backup to their working location:
     cp -r ~/secure-kabreneman-backup/financial/ ~/kabreneman-working/
     cp -r ~/secure-kabreneman-backup/archive/ ~/kabreneman-working/
 
-  Step 3 — Restore permissions:
-    chmod 600 ~/kabreneman-working/**/*.md
-    chmod 600 ~/kabreneman-working/**/*.csv
+  Step 3 — Restore permissions (use find for cross-shell compatibility):
+    find ~/kabreneman-working/ -type f -name "*.md" -exec chmod 600 {} \;
+    find ~/kabreneman-working/ -type f -name "*.csv" -exec chmod 600 {} \;
 
   Step 4 — Run verification (see Section 8).
 
