@@ -1,0 +1,207 @@
+Change Request CR-00001: DOCSYS Revision Checklist
+
+Description
+
+A structured operator-grade checklist for updating all DOCSYS and L‑Class Pages
+
+This change request formalizes a.                  DOCSYS Revision Checklist as the operative checklist for updating all DOCSYS and L-Class Pages. It ensures alignment with the updated identity-assignment rule and the clarified separation between the Ide             Architecture and the Record Architecture.
+
+Scope
+
+Updating DOCSYS governance
+
+Adding new document classes
+
+Revising identity rules
+
+Auditing consistency across Pages
+
+1. Purpose
+
+This checklist provides a step-by-step sequence for revising all DOCSYS and L‑Class Pages to align with the updated identity‑assignment rule and the clarified separation between the Identity Architecture and the Record Architecture.
+
+Use this checklist whenever:
+
+Updating DOCSYS governance
+
+Adding new document classes
+
+Revising identity rules
+
+Auditing consistency across Pages
+
+2. Identity Rule Integration
+
+2.1 Confirm DOC ID Assignment Rule
+
+Insert or verify the rule:
+
+“New DOC IDs are assigned by finding the highest number with the corresponding prefix and incrementing it by 1.”
+
+Ensure rule appears in P‑00000
+
+Ensure rule appears in X‑00001
+
+Ensure rule is referenced in all DOCSYS Pages that mention identity
+
+2.2 Validate Class-Scoped Numbering
+
+Confirm each class (P, W, R, A, D, CR, X) has its own numbering stream
+
+Confirm numbering begins at <ClassPrefix>-00000 for templates
+
+Confirm numbering increments sequentially
+
+Confirm no DOC ID is reused or repurposed
+
+3. L‑Class Separation
+
+3.1 Clarify L‑Class Exclusion
+
+Add statement that L‑Class does not follow DOCSYS numbering rules
+
+Confirm L‑Class identifiers are described as semantic and domain‑encoded
+
+Ensure L‑Class is placed in the Record Architecture, not Identity Architecture
+
+3.2 Validate L‑Class Index
+
+Confirm GAAP accounts are listed correctly
+
+Confirm system codes and runtime events are categorized
+
+Confirm no DOCSYS numbering rules appear in L‑Class sections
+
+4. Cross-References
+
+4.1 Reference P‑00000
+
+Add cross‑reference to P‑00000 in all Pages that describe DOC ID assignment
+
+4.2 Reference X‑00001
+
+Add cross‑reference to X‑00001 in Pages describing DOCSYS hierarchy or class structure
+
+4.3 Reference L‑Class Governance
+
+Add cross‑reference to L‑Class Governance Page where Record Architecture is discussed
+
+5. Page-Specific Updates
+
+5.1 P‑00000 — DOCSYS Document Creation Governance
+
+Confirm identity‑assignment rule is present
+
+Confirm DOCSYS class definitions are correct
+
+Confirm AUID and UDIS rules are accurate
+
+5.2 X‑00001 — DOCSYS Index Hierarchy Governance
+
+Insert identity‑assignment rule
+
+Confirm hierarchy reflects updated architecture
+
+Confirm L‑Class is excluded from DOCSYS numbering
+
+5.3 L‑Class Governance Page
+
+Insert explicit exclusion from DOCSYS numbering
+
+Confirm semantic nature of L‑Class identifiers
+
+Confirm crosswalk references are correct
+
+5.4 DOCSYS Document Identity Index
+
+Confirm all DOC IDs follow sequential numbering
+
+Confirm templates use 00000
+
+Confirm no numbering gaps unless intentional
+
+6. Consistency Audit
+
+6.1 Identity Architecture
+
+DOC ID rules consistent across all Pages
+
+AUID rules consistent across all Pages
+
+UDIS rules consistent across all Pages
+
+6.2 Record Architecture
+
+L‑Class consistently treated as semantic
+
+No identity‑pure rules applied to L‑Class
+
+6.3 Crosswalks
+
+X‑Class documents reference correct namespaces
+
+L‑Class mappings appear only in X‑Class
+
+7. Final Verification
+
+All Pages updated
+
+All cross‑references correct
+
+All numbering consistent
+
+All governance language aligned with UNISYS architecture
+
+8. Completion Log
+
+Use this section to track progress.
+
+Page
+
+Status
+
+Date
+
+Notes
+
+P‑00000
+
+☐
+
+
+
+
+
+X‑00001
+
+☐
+
+
+
+
+
+L‑Class Governance
+
+☐
+
+
+
+
+
+DOCSYS Identity Index
+
+☐
+
+
+
+
+
+Other Pages
+
+☐
+
+
+
+
+
+This checklist ensures all DOCSYS and L‑Class documents remain consistent, compliant, and aligned with the updated identity architecture.

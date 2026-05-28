@@ -1,0 +1,239 @@
+G–00002 — DOCSYS DOCUMENT CREATION GOVERNANCE
+
+Template and Governance for All DOCSYS Document Classes
+
+Based on the “DOCSYS Index Hierarchy Overview” Conversation
+
+1. Purpose
+
+This Page defines the governance, structure, and required process for creating any DOCSYS document. It serves as the root template for all P‐Class, W‐Class, R‐Class, A‐Class, D‐Class, CR‐Class, and X‐Class documents. It incorporates the principles established in the DOCSYS Index Hierarchy Overview conversation and formalizes them into a unified, constitutional governance standard.
+
+2. Scope
+
+This governance applies to:
+
+All DOCSYS document classes
+
+All template definitions
+
+All document creation workflows
+
+All identity assignments (DOC ID, AUID)
+
+All revisions, publications, and archival events
+
+It does not apply to L‐Class, which belongs to the Record Architecture and is governed separately.
+
+3. Identity Architecture Requirements
+
+DOCSYS documents must comply with the UNISYS Identity Architecture:
+
+3.1 DOC ID (Template Identity)
+
+Assigned when the document type is defined
+
+Format: <ClassPrefix>-00000 for templates
+
+Format: <ClassPrefix>-00001+ for documents
+
+Zero padded, 5 digit serial
+
+Namespace agnostic
+
+Immutable
+
+3.2 AUID (Artifact Identity)
+
+Assigned when a document is instantiated, executed, or published
+
+Sequential, global, immutable
+
+Tracks provenance and lifecycle
+
+3.3 UDIS (Instance Identity)
+
+Assigned when a physical/digital instance exists
+
+Independent of DOC ID and AUID
+
+4. Document Class Definitions
+
+Each DOCSYS class has a specific purpose:
+
+4.1 P‐Class — Procedures
+
+Defines required steps, responsibilities, and controls.
+
+4.2 W‐Class — Workflows
+
+Defines operational sequences, transitions, and state logic.
+
+4.3 R‐Class — Reviews
+
+Defines evaluation, readiness, compliance, or audit checks. Verifications are included as part of this class, representing evaluation and compliance activities.
+
+4.4 A‐Class — Analysis
+
+Defines structured analytical documents, including evaluations interpreting aggregated data.
+
+4.5 D‐Class — Datasets
+
+Defines structured data collections, including aggregated or raw data from queries.
+
+4.6 CR‐Class — Change Requests
+
+Defines requests to create, modify, or retire documents.
+
+4.7 X‐Class — Crosswalks
+
+Defines mappings between namespaces, systems, or classifications.
+
+4.8 REP‐Class — Reports
+
+Defines documents that aggregate, summarize, or present findings and status reports distinct from Reviews. Reports provide structured documentation of operational or analytical results.
+
+5. Document Creation Workflow
+
+All DOCSYS documents must follow this creation process:
+
+5.1 Initiation
+
+Triggered by operational need, governance requirement, or CR-Class request.
+
+Document class is selected.
+
+Once a document class is assigned, find the highest number with the corresponding prefix and assign the new document with that number incremented by 1.
+
+DOC ID is assigned.
+
+5.2 Drafting
+
+Document is authored using the class template.
+
+Required sections must be included.
+
+Cross-references must be validated.
+
+5.3 Review
+
+Peer or system review is performed.
+
+Compliance with identity architecture is verified.
+
+5.4 Publication
+
+AUID is assigned.
+
+Document is added to the DOCSYS index.
+
+Document becomes authoritative.
+
+5.5 Revision
+
+Revisions require a CR-Class request.
+
+New AUID is assigned for each revision.
+
+5.6 Archival
+
+Retired documents are archived with their AUID.
+
+DOC ID remains permanently assigned.
+
+6. Required Document Structure
+
+All DOCSYS documents must include:
+
+Title
+
+DOC ID
+
+AUID (once created)
+
+Purpose
+
+Scope
+
+Definitions (if applicable)
+
+Governance or procedural content
+
+Cross-references
+
+Revision history
+
+7. DOCSYS Index Hierarchy
+
+The DOCSYS hierarchy is structured as follows:
+
+7.1 Identity Layer
+
+DOC ID (template)
+
+AUID (artifact)
+
+UDIS (instance)
+
+7.2 Document Layer
+
+P-Class
+
+W-Class
+
+R-Class
+
+A-Class
+
+D-Class
+
+CR-Class
+
+X-Class
+
+REP-Class
+
+7.3 Record Layer (External)
+
+L-Class (separate governance)
+
+8. Compliance Requirements
+
+All DOCSYS documents must:
+
+Use the correct DOC ID
+
+Assign AUIDs upon creation
+
+Follow the class template
+
+Maintain revision history
+
+Reference crosswalks where applicable
+
+Comply with UNISYS Identity Architecture
+
+9. Summary
+
+This Page establishes the governance, identity rules, and creation workflow for all DOCSYS documents. It is the authoritative template for document creation and ensures consistency, traceability, and architectural integrity across the entire system.
+
+This Page is assigned the DOC ID P‐00000 and governs all subsequent DOCSYS document creation.
+
+10. Notes on Evaluations and Data Aggregation
+
+Evaluations interpreting aggregated data from queries or datasets belong to the A-Class (Analysis).
+
+Aggregated or raw data collections resulting from queries belong to the D-Class (Datasets).
+
+Reports (REP-Class) provide structured documentation of findings and status, distinct from Reviews (R-Class).
+
+Change Log
+
+Added rule in Document Creation Workflow to assign new document numbers by incrementing the highest existing number with the same prefix.
+
+Clarified that Verifications fit within the R-Class (Reviews) as part of evaluation and compliance.
+
+Proposed new REP-Class for Reports to distinguish them from Reviews.
+
+Added clarification on classification of evaluations and aggregated data: evaluations belong to A-Class (Analysis), aggregated data to D-Class (Datasets).
+
+Standardized all class prefixes to a single character for DOC ID assignment consistency.
