@@ -13,10 +13,6 @@ This is a simple static website built with HTML, CSS, and JavaScript.
    ```bash
    npm start
    ```
-   Or use any static file server:
-   ```bash
-   python3 -m http.server 8000
-   ```
 3. Open your browser to `http://localhost:8000`
 
 ## Project Structure

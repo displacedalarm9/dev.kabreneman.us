@@ -53,10 +53,13 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Kabreneman. All rights reserved.</p>
+            <p>&copy; <span id="copyright-year"></span> Kabreneman. All rights reserved.</p>
         </div>
     </footer>
 
+    <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
