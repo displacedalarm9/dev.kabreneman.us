@@ -1,35 +1,11 @@
-# dev.kabreneman.us
+# dev.kabreneman.us - Historical Mirror
 
-Technical documentation repository for hardware artifacts, repurpose candidates, and system integration planning.
+Status: OBSOLETE / HISTORICAL MIRROR
 
-## Documentation Structure
+The canonical current architecture repository is `displacedalarm9/ninedisplacedarchitecture`.
 
-### Q-DOCs (Qualifier / Observed Behavior Documents)
-Documents that capture observed behavior, constraints, anomalies, and variation patterns of hardware and software artifacts.
+This repository is retained as a historical predecessor/mirror and must not receive new authoritative ND/DOCSYS promulgations.
 
-- [Hardware Q-DOCs](docs/q-docs/hardware/)
-  - [QDOC-CarThing-ObservedBehavior-01](docs/q-docs/hardware/QDOC-CarThing-ObservedBehavior-01.md) - Spotify Car Thing observed behavior and variation log
+A preservation branch named `archive-ninedisplacedarchitecture-2026-11-24` records the repository state immediately before this designation.
 
-## Document Types
-
-- **Q-DOCs**: Qualifier documents recording what *is*, not what should be
-- **HARDMAP**: Hardware mapping documents
-- **TEARDOWN**: Teardown procedures and observations
-- **EVAL**: Feasibility evaluation matrices
-- **SCHM**: Schematic and pinout documentation
-- **HIST**: Provenance and history records
-# dev.kabreneman.us — UNISYS
-
-Unified system repository for the UNISYS platform.
-
-## Structure
-
-| Directory      | Purpose                                              |
-|----------------|------------------------------------------------------|
-| `docs/`        | Canonical context documents, system guides, notes    |
-| `scripts/`     | Automation scripts, asset generators, workflows      |
-| `financials/`  | WORKCAP, budgeting, and financial planning modules   |
-| `devices/`     | DEVICEOPS configurations and hardware specifications |
-| `.github/`     | Copilot instructions and GitHub configuration        |
-
-See [`.github/copilot-instructions.md`](.github/copilot-instructions.md) for contributor guidelines and UNISYS principles.
+For current governed architecture, use `displacedalarm9/ninedisplacedarchitecture`.
